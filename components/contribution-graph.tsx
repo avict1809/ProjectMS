@@ -94,9 +94,6 @@ export default function ContributionGraph() {
     <div className="w-full overflow-x-auto">
       <div className="min-w-[900px]">
         <canvas ref={canvasRef} className="w-full h-[160px]"></canvas>
-        <div className="text-center text-xs text-gray-500 mt-2">
-          <button className="underline">Learn how we count contributions</button>
-        </div>
       </div>
     </div>
   )

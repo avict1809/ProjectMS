@@ -26,7 +26,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <MacbookScroll src="https://supabase.com/images/blog/launch-week-three/studio/open-source-studio-og.png" />
+      <MacbookScroll src="/image.png" />
     </div>
   );
 }

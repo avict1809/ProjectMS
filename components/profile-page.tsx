@@ -26,7 +26,7 @@ export default function ProfilePage() {
 
             <div>
               <div className="flex items-center gap-3">
-                <h1 className="text-2xl font-bold">devManager42</h1>
+                <h1 className="text-2xl font-bold">Aaron Victor</h1>
                 <Badge variant="outline" className="text-emerald-400 border-emerald-400">
                   Project Lead
                 </Badge>
@@ -49,7 +49,7 @@ export default function ProfilePage() {
           <div className="flex-1 grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 md:mt-0">
             <StatCard title="Projects Started" value="147" icon={<Flag className="h-5 w-5 text-blue-400" />} />
             <StatCard title="Projects Completed" value="70" icon={<CheckCircle className="h-5 w-5 text-green-400" />} />
-            <StatCard title="Time Tracked" value="127:44:12" icon={<Clock className="h-5 w-5 text-purple-400" />} />
+            <StatCard title="Projects Pending" value="77" icon={<Clock className="h-5 w-5 text-purple-400" />} />
           </div>
         </div>
 
@@ -60,7 +60,7 @@ export default function ProfilePage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <MetricCard title="Task Completion Rate" value="92%" subtext="Last 30 days" />
               <MetricCard title="On-time Delivery" value="88%" subtext="Last 30 days" />
-              <MetricCard title="Code Quality Score" value="A+" subtext="Based on 247 PRs" />
+              <MetricCard title="Dept satisfaction" value="A+" subtext="Based on SITU dpt" />
               <MetricCard title="Team Satisfaction" value="4.8/5" subtext="Based on 36 reviews" />
             </div>
           </CardContent>
@@ -103,17 +103,17 @@ export default function ProfilePage() {
                 <h2 className="text-xl font-semibold mb-4">Contribution Activity</h2>
                 <div className="space-y-4">
                   <ActivityItem
-                    title="Merged PR: Fix authentication flow in user service"
+                    title="Finished designing front-end"
                     time="2 hours ago"
-                    type="pull-request"
+                    type="Task Update"
                   />
-                  <ActivityItem title="Reviewed PR: Add new dashboard analytics" time="Yesterday" type="review" />
+                  <ActivityItem title="Updated list of tools" time="Yesterday" type="review" />
                   <ActivityItem
-                    title="Created Issue: Mobile responsiveness on profile page"
+                    title="Uploaded files"
                     time="2 days ago"
                     type="issue"
                   />
-                  <ActivityItem title="Deployed: v2.3.0 to production" time="3 days ago" type="deployment" />
+                  <ActivityItem title="Reported an issue" time="3 days ago" type="deployment" />
                 </div>
               </CardContent>
             </Card>
