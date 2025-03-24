@@ -27,7 +27,7 @@ const sidebarItems = [
   {
     section: "Project Management",
     items: [
-      { label: "Projects", icon: Folder, link: "/dashboard/projects" },
+      { label: "Overview", icon: Folder, link: "/dashboard/project-overview" },
       { label: "Tasks", icon: ListChecks, link: "/dashboard/tasks" },
       { label: "Teams", icon: Users, link: "/dashboard/teams" },
       { label: "Calendar", icon: Calendar, link: "/dashboard/calendar" },
