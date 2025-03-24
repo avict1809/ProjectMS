@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import { Flame } from "lucide-react";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useEffect } from "react";
