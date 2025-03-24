@@ -19,10 +19,10 @@ export function FolderGrid() {
       {taskFolders.map((folder) => (
         <Link href={`/files/folder/${folder.id}`} key={folder.id} className="block">
           <Card className="h-full hover:bg-accent/50 transition-colors">
-            <CardContent className="p-4 flex flex-col items-center justify-center pt-6">
-              <div className="relative">
+            <CardContent className="p-4 flex flex-col items-center justify-center pt-6 relative">
+              <div className="">
                 <Folder className="h-16 w-16 text-blue-500" />
-                <div className="absolute -top-1 -right-1">
+                <div className="absolute top-0 -right-0">
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                       <Button variant="ghost" size="icon" className="h-6 w-6 rounded-full">
