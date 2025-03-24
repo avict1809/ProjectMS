@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
-import { ProjectContributions } from "@/components/project-contributions"
+// import { ProjectContributions } from "@/components/project-contributions"
 import { ProjectTools } from "@/components/project-tools"
 import { ProjectSummary } from "@/components/project-summary"
 
@@ -94,7 +94,7 @@ export function ProjectDashboard() {
       <Tabs defaultValue="members" className="w-full">
         <TabsList className="grid w-full grid-cols-4">
           <TabsTrigger value="members">Members</TabsTrigger>
-          <TabsTrigger value="contributions">Contributions</TabsTrigger>
+          {/* <TabsTrigger value="contributions">Contributions</TabsTrigger> */}
           <TabsTrigger value="tools">Tools</TabsTrigger>
           <TabsTrigger value="summary">Summary</TabsTrigger>
         </TabsList>
@@ -132,7 +132,7 @@ export function ProjectDashboard() {
           </Card>
         </TabsContent>
 
-        <TabsContent value="contributions" className="mt-6">
+        {/* <TabsContent value="contributions" className="mt-6">
           <Card>
             <CardHeader>
               <CardTitle>Contribution Activity</CardTitle>
@@ -142,7 +142,7 @@ export function ProjectDashboard() {
               <ProjectContributions />
             </CardContent>
           </Card>
-        </TabsContent>
+        </TabsContent> */}
 
         <TabsContent value="tools" className="mt-6">
           <Card>
