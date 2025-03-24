@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/* Prevent Hydration Errors */}
         {mounted ? (
-          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          <ThemeProvider attribute="class"  enableSystem={false}>
             {children}
           </ThemeProvider>
         ) : (
