@@ -1,15 +1,25 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import { Flame } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
+import { useTheme } from "next-themes";
+import { useEffect } from "react";
 
-export const metadata: Metadata = {
-  title: "ProjectMS-Home",
-  description: "ProjectMS-Home",
-}
+// export const metadata: Metadata = {
+//   title: "ProjectMS-Home",
+//   description: "ProjectMS-Home",
+// }
+
+
 
 export default function Home() {
+  const {theme,setTheme} = useTheme();
+  useEffect(() => {
+    setTheme('dark');
+    console.log(theme)
+  })
   return (
     <div className="p-3 dark:text-white">
       <div className="flex items-center justify-between">
