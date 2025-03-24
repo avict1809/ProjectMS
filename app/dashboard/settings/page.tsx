@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 export default function ActivityLogPage() {
   return (
     <div>
-      Tesing
       <UnderConstruction />
     </div>
   );
