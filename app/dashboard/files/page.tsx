@@ -59,7 +59,7 @@ export default function FilesPage() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>Project Alpha</BreadcrumbPage>
+            <BreadcrumbPage>Project ProjectMS </BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
