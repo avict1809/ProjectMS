@@ -1,16 +1,16 @@
 // app/activity-log/page.tsx
 import { Metadata } from 'next';
-import { UnderConstruction } from '@/components/underConstruction';
+import ProjectReportPage from '@/app/pages/report';
 
 export const metadata: Metadata = {
-  title: 'Reports - Under Construction',
-  description: 'This feature is under construction. We’re working on it!',
+  title: 'Reports',
+  description: 'Comprehensive report on the project',
 };
 
 export default function ActivityLogPage() {
   return (
     <div>
-      <UnderConstruction />
+      <ProjectReportPage />
     </div>
   );
 }
