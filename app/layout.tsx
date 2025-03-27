@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 import { useEffect, useState } from "react";
 
 import "./globals.css";
+import ProgressBar from "@/components/ProgressBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Prevent Hydration Errors */}
         {mounted ? (
           <ThemeProvider attribute="class"  enableSystem={false}>
+            <ProgressBar />
             {children}
           </ThemeProvider>
         ) : (
