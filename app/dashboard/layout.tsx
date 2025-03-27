@@ -3,6 +3,7 @@
 import { Sidebar } from "../../components/sidebar";
 import { SlimSidebar } from "../../components/slimSider";
 import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
 export default function RootLayout({
   children,
@@ -10,10 +11,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [mounted, setMounted] = useState(false);
+  const {setTheme} = useTheme()
 
   // Prevent hydration issues by ensuring this runs only on the client
   useEffect(() => {
     setMounted(true);
+    setTheme("light");
   }, []);
 
   if (!mounted) {

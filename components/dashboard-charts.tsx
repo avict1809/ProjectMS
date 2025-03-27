@@ -155,62 +155,6 @@ export function DashboardCharts() {
           </ChartContainer>
         </CardContent>
       </Card>
-
-      {/* Team Workload Chart */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Team Workload</CardTitle>
-          <CardDescription>Current tasks assigned to each team</CardDescription>
-        </CardHeader>
-        <CardContent className="h-[300px]">
-          <ChartContainer
-            config={{
-              tasks: {
-                label: "Tasks",
-                color: "hsl(var(--chart-1))",
-              },
-            }}
-          >
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={teamWorkloadData}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip content={<ChartTooltipContent />} />
-                <Bar dataKey="tasks" fill="var(--color-tasks)" radius={[4, 4, 0, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
-          </ChartContainer>
-        </CardContent>
-      </Card>
-
-      {/* Upcoming Deadlines Chart */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Upcoming Deadlines</CardTitle>
-          <CardDescription>Days remaining for project completion</CardDescription>
-        </CardHeader>
-        <CardContent className="h-[300px]">
-          <ChartContainer
-            config={{
-              daysLeft: {
-                label: "Days Left",
-                color: "hsl(var(--chart-3))",
-              },
-            }}
-          >
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={upcomingDeadlinesData} layout="vertical">
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis type="number" />
-                <YAxis dataKey="project" type="category" width={80} />
-                <Tooltip content={<ChartTooltipContent />} />
-                <Bar dataKey="daysLeft" fill="var(--color-daysLeft)" radius={[0, 4, 4, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
-          </ChartContainer>
-        </CardContent>
-      </Card>
     </div>
   )
 }
