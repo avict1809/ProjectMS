@@ -1,0 +1,15 @@
+/* styles/nprogress.css */
+#nprogress {
+    pointer-events: none;
+  }
+  
+  #nprogress .bar {
+    background: hsl(223, 93%, 43%); /* Change color */
+    height: 3px; /* Adjust thickness */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1031;
+  }
+  

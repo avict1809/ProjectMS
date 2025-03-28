@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import NProgress from "nprogress";
-import "nprogress/nprogress.css";
+import "@/styles/nprogress.css";
 
 // Configure NProgress
 NProgress.configure({ showSpinner: false });
@@ -21,7 +21,7 @@ const ProgressBar = () => {
     const timer = setTimeout(() => {
       NProgress.done();
       setLoading(false);
-    }, 0); // Adjust delay if needed
+    }, 250); // Adjust delay if needed
 
     return () => {
       clearTimeout(timer);
