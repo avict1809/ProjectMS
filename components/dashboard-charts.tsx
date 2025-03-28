@@ -3,8 +3,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ChartContainer, ChartTooltipContent } from "@/components/ui/chart"
 import {
-  BarChart,
-  Bar,
   LineChart,
   Line,
   PieChart,
@@ -33,20 +31,6 @@ const taskCompletionData = [
   { date: "2024-04", completed: 22, total: 25 },
   { date: "2024-05", completed: 30, total: 35 },
   { date: "2024-06", completed: 28, total: 32 },
-]
-
-const teamWorkloadData = [
-  { name: "Team A", tasks: 24 },
-  { name: "Team B", tasks: 18 },
-  { name: "Team C", tasks: 32 },
-  { name: "Team D", tasks: 15 },
-]
-
-const upcomingDeadlinesData = [
-  { project: "Project A", daysLeft: 5 },
-  { project: "Project B", daysLeft: 12 },
-  { project: "Project C", daysLeft: 3 },
-  { project: "Project D", daysLeft: 8 },
 ]
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"]

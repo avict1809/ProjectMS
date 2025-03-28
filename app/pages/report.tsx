@@ -54,37 +54,6 @@ const burndownData = [
   { name: "Nov 19", planned: 0, actual: 8 },
 ]
 
-// Custom tooltip component
-const CustomTooltip = ({ active, payload, label }: any) => {
-  if (active && payload && payload.length) {
-    return (
-      <div className="bg-background border rounded-md shadow-sm p-2 text-xs">
-        <p className="font-medium">{`${label}`}</p>
-        {payload.map((entry: any, index: number) => (
-          <p key={`item-${index}`} style={{ color: entry.color || entry.fill }}>
-            {`${entry.name}: ${entry.value}`}
-          </p>
-        ))}
-      </div>
-    )
-  }
-
-  return null
-}
-
-// Custom label component for pie chart
-const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index, name }: any) => {
-  const RADIAN = Math.PI / 180
-  const radius = innerRadius + (outerRadius - innerRadius) * 0.5
-  const x = cx + radius * Math.cos(-midAngle * RADIAN)
-  const y = cy + radius * Math.sin(-midAngle * RADIAN)
-
-  return (
-    <text x={x} y={y} fill="white" textAnchor={x > cx ? "start" : "end"} dominantBaseline="central" fontSize={12}>
-      {`${(percent * 100).toFixed(0)}%`}
-    </text>
-  )
-}
 
 export default function ProjectReportPage() {
   const [chartType, setChartType] = useState("bar")
