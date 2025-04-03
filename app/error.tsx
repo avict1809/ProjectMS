@@ -23,7 +23,7 @@ export default function Error({
           <AlertCircle className="h-12 w-12 text-destructive mx-auto mb-4" />
           <h2 className="text-2xl font-bold mb-2">Something went wrong!</h2>
           <p className="text-muted-foreground mb-6">
-            We apologize for the inconvenience. Our team has been notified of this issue.
+            We apologize for the inconvenience. Your connection might be a problem!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button onClick={() => reset()} className="gap-2">
