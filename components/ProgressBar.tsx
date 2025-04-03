@@ -21,7 +21,7 @@ const ProgressBar = () => {
     const timer = setTimeout(() => {
       NProgress.done();
       setLoading(false);
-    }, 250); // Adjust delay if needed
+    }, 0); // Adjust delay if needed
 
     return () => {
       clearTimeout(timer);

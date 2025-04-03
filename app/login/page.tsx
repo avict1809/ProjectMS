@@ -21,8 +21,8 @@ export default function LoginPage() {
 
     // In a real app, you might want to validate the email format
     // and check if the user exists before proceeding
+    // EMMATIKO WAS HERE
 
-    // Encode the email for the URL
     const encodedEmail = encodeURIComponent(email)
 
     // Navigate to the password page with the email as a query parameter
