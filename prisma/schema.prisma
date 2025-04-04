@@ -7,14 +7,36 @@ datasource db {
   url      = "file:./dev.db"
 }
 
-
 model User {
-  id       String  @id @default(uuid())
-  username String  @unique
-  email    String  @unique
-  password String
-  role     String  @default("team") // team, manager, admin
+  id        String   @id @default(uuid()) // UUID as String
+  username  String   @unique
+  email     String   @unique
+  password  String
+  role      Role     @relation(fields: [roleId], references: [id])
+  roleId    Int
   createdAt DateTime @default(now())
+  sessions  Session[] 
+  accounts  Account[]
 
-  @@map("users")
+  @@map("users") // Keep the table name mapping intact
+}
+
+model Role {
+  id    Int    @id @default(autoincrement())
+  name  String @unique // This will hold values like 'team', 'manager', 'admin'
+  users User[] // This relation connects back to the User model
+}
+
+model Session {
+  id     Int    @id @default(autoincrement())
+  userId String // This should be String to match the User's id type
+  user   User   @relation(fields: [userId], references: [id]) // Foreign key to User's id
+}
+
+model Account {
+  id       Int    @id @default(autoincrement())
+  userId   String // This should also be String to match the User's id type
+  user     User   @relation(fields: [userId], references: [id])
+  provider String
+  providerAccountId String
 }
