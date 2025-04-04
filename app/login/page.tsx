@@ -47,42 +47,6 @@ export default function LoginPage() {
             <CardTitle className="text-lg">Sign in with Email</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            {/* <div className="grid grid-cols-3 gap-2">
-              <Button variant="outline" className="border-gray-800 bg-gray-900 hover:bg-gray-800">
-                <FireExtinguisher className="h-5 w-5" />
-              </Button>
-              <Button variant="outline" className="border-gray-800 bg-gray-900 hover:bg-gray-800">
-                <Building2Icon className="h-5 w-5" />
-              </Button>
-              <Button variant="outline" className="border-gray-800 bg-gray-900 hover:bg-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-5 w-5"
-                >
-                  <path d="M5 12a7 7 0 0 0 7 7 7 7 0 0 0 7-7 7 7 0 0 0-7-7 7 7 0 0 0-7 7Z" />
-                  <path d="M5 12h2" />
-                  <path d="M17 12h2" />
-                  <path d="M5 12a7 7 0 0 0 7 7" />
-                  <path d="M12 19a7 7 0 0 0 7-7" />
-                </svg>
-              </Button>
-            </div> */}
-
-            {/* <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <Separator className="w-full border-gray-800" />
-              </div>
-              <div className="relative flex justify-center text-xs">
-                <span className="bg-gray-950 px-2 text-gray-400">Or continue with</span>
-              </div>
-            </div> */}
-
             <form onSubmit={handleEmailSubmit} className="space-y-3">
               <div className="space-y-2">
                 <Input
